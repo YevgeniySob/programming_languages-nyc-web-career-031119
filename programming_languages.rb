@@ -36,8 +36,8 @@ def reformat_languages(languages)
       parameters.each do |type, values|
         if !new_hash.has_key?(language)
           new_hash[language] = {}
+          new_hash[language][:style] = []
         end
-        new_hash[language][:style] = []
         new_hash[language][:style] << oo
         new_hash[language][:type] = values
       end
