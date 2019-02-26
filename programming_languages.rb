@@ -7,8 +7,8 @@ def reformat_languages(languages)
         if !new_hash.has_key?(language)
           new_hash[language] = {}
         end
-        new_hash[:style] = []
-        new_hash[:style] << oo
-        new_hash[:key] = values
+        new_hash[language][:style] = []
+        new_hash[language][:style] << oo
+        new_hash[language][:key] = values
         
 end
